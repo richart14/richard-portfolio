@@ -21,11 +21,20 @@ $background-opacity: .85;
         top: 0;
         right: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         z-index: -1;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
   }
 }
 
@@ -52,7 +61,7 @@ $background-opacity: .85;
 }
 
 
-@mixin mediaXL {
+@mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
   }

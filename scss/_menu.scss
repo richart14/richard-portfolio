@@ -47,13 +47,13 @@
   &.show {
     visibility: visible;
   }
-
-  &-branding, &-nav {
+ 
+  &-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
+    float: right;
     width: 50%;
     height: 100vh;
     overflow: hidden;
@@ -73,24 +73,16 @@
     }
   }
 
-  &-branding {
-    background: $primary-color;
-    @include easeOut;
-    transform: translate3d(0, 100%, 0);
+  // &-branding {
+  //   background: $primary-color;
+  //   @include easeOut;
+  //   transform: translate3d(0, 100%, 0);
 
-    &.show {
-      //Slide in from bottom
-      transform: translate3d(0,0,0)
-    }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url('../img/portrait.png');
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
-    }
-  }
+  //   &.show {
+  //     //Slide in from bottom
+  //     transform: translate3d(0,0,0)
+  //   }
+  // }
 
   .nav-item {
     transform: translate3d(600px, 0, 0);

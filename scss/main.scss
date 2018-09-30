@@ -76,9 +76,9 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 
-  'bioimage bio bio'
-  'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
+  'bioimage bio'
+  'job1 job2';
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .bio-image {
@@ -119,6 +119,7 @@ main {
 
   img {
     width: 100%;
+    height: 25rem;
     border: 3px white solid;
     
     &:hover {

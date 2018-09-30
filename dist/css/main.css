@@ -28,12 +28,12 @@
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
-  .menu-branding, .menu-nav {
+  .menu-nav {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
+    float: right;
     width: 50%;
     height: 100vh;
     overflow: hidden; }
@@ -46,18 +46,6 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
-  .menu-branding {
-    background: #444;
-    transition: all 0.5s ease-out;
-    transform: translate3d(0, 100%, 0); }
-    .menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/portrait.png");
-      border-radius: 50%;
-      border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -154,8 +142,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimage bio' 'job1 job2';
+  grid-template-columns: repeat(2, 1fr); }
 
 .bio-image {
   grid-area: bioimage;
@@ -187,6 +175,7 @@ main {
   grid-template-columns: repeat(2, 1fr); }
   .projects img {
     width: 100%;
+    height: 25rem;
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;

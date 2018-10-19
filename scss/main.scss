@@ -84,7 +84,7 @@ main {
 .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
+  // border-radius: 50%;
   border: $secondary-color 3px solid;
 }
 
@@ -116,6 +116,28 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr);
+
+  .descript {
+    padding: 10px;
+    min-height: 550px;
+    border: 4px solid #ffffff;
+    .project-title {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+
+  .p1 {
+    background: #3D2A24;
+  }
+
+  .p2 {
+    background: #60a114;
+  }
+
+  .p3 {
+    background: #03a9f4;
+  }
 
   img {
     width: 100%;

@@ -148,7 +148,6 @@ main {
 .bio-image {
   grid-area: bioimage;
   margin: auto;
-  border-radius: 50%;
   border: #eece1a 3px solid; }
 
 .bio {
@@ -173,6 +172,19 @@ main {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(2, 1fr); }
+  .projects .descript {
+    padding: 10px;
+    min-height: 550px;
+    border: 4px solid #ffffff; }
+    .projects .descript .project-title {
+      text-decoration: underline;
+      font-weight: bold; }
+  .projects .p1 {
+    background: #3D2A24; }
+  .projects .p2 {
+    background: #60a114; }
+  .projects .p3 {
+    background: #03a9f4; }
   .projects img {
     width: 100%;
     height: 25rem;

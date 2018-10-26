@@ -184,6 +184,9 @@ main, section {
   background: darken($primary-color,10);
   color: set-text-color($primary-color);
   height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 @import 'mobile';

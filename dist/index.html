@@ -19,21 +19,16 @@
     </div>
 
     <nav class="menu">
-      <div class="menu-branding">
-      </div>
+      <!-- <div class="menu-branding">
+      </div> -->
       <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="/" class="nav-link">
-            Home
-          </a>
-        </li>
         <li class="nav-item">
-          <a href="about.html" class="nav-link">
+          <a href="#about" class="nav-link">
             About me
           </a>
         </li>
         <li class="nav-item">
-          <a href="project.html" class="nav-link">
+          <a href="#work" class="nav-link">
             My Projects
           </a>
         </li>
@@ -49,17 +44,167 @@
       Full Stack Web Developer
     </h2>
     <div class="icons">
-      <a href="https://www.facebook.com/richtomtomtom">
+      <a href="https://www.facebook.com/richtomtomtom" target="_blank">
         <i class="fab fa-facebook fa-2x"></i>
       </a>
-      <a href="https://www.linkedin.com/in/richart14/">
+      <a href="https://www.linkedin.com/in/richart14/" target="_blank">
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
-      <a href="https://github.com/richart14">
+      <a href="https://github.com/richart14" target="_blank">
         <i class="fab fa-github fa-2x"></i>
       </a>
     </div>
   </main>
+
+  <section id="about">
+    <h1 class="lg-heading">
+      About <span class="text-secondary">Me</span>
+    </h1>
+    <div class="about-info">
+      <img src="img/portrait.png" alt="Richard Tom" class="bio-image">
+
+      <div class="bio">
+        <h3 class="text-secondary">BIO</h3>
+        <p>
+          I've always felt an affinity for logical thinking and have always found problem solving to be a pasttime rather than a chore. I am a board game fanantic
+          and I love learning new instructions, rules, and game structures. At the start of 2018 was when I decide I would take a leap of faith and commit to web development
+          full time and I have not regretted it since. I enjoyed learning all the languages, wireframes, libraries and anything inbetween. During my web development journey,
+          I've had the opportunity to collaborate in group projects and contribute in daily scrums.
+        </p>
+      </div>
+
+      <div class="job job-1">
+        <h3>U10 Corporation Mathnasium</h3>
+        <h6>Center Director</h6>
+        <p>
+          As a center director, I was responsible of many adminstrative task and relation-building task. Under my leadership, 
+          the Monterey Park center had seen an increase in revenue from many factors. We have greater retention of members through 
+          community outreach programs that I put the gears into to motion.
+        </p>
+      </div>
+      <div class="job job-2">
+        <h3>Thinkful</h3>
+        <h6>Engineering Emmersion Student</h6>
+        <p>
+          As a student, I learned the best industry practies and practical software development standards with a 
+          focus on HTML5, CSS3, JavaScript, jQuery, Node.js, React, Redux, and algorithms & data structures. I also created 
+          and deployed mobile-first applications while learning new languages, frameworks and deployment by collaborating 
+          several hours every week with a senior web developer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h1 class="lg-heading">
+      My <span class="text-secondary">Projects</span>
+    </h1>
+    <div class="projects">
+      <div class="item">
+        <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank">
+          <img src="img/projects/shaving.png" alt="Project">
+        </a>
+        <div class="descript p1">
+          <h2><span class="project-title">ShaveReducer</span></h2>
+          <p>Traditionally, the shaving community keeps track of their shaves and products in spreadsheet files. ShaveReducer servers as a shave logger for the shave enthusiast community so they can easily track their shaves and products. Users have freedom to continue from their already existing spreadsheets as well!</p>
+          <u>Front-End:</u>
+          <p>
+            React, Redux, Redux-Thunk, React-Router, Moment, React-Tabs, React-Modal, Enzyme/Jest, HTML5, CSS3, CI(Travis), CD(Netlify)
+          </p>
+          <u>Back-End:</u>
+          <p>
+            Node.js, Express, MongoDB, Mongoose, Bcrypt, Passport, JSON Web Tokens, Cloudinary, Mocha/Chai, CI(Travis), CD(Heroku)
+          </p>
+        </div>
+        <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="https://github.com/thinkful-ei22/shaving-tracker-client" target="_blank" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://sign-app-client.herokuapp.com/" target="_blank">
+          <img src="img/projects/asl-app.png" alt="Project">
+        </a>
+        <div class="descript p2">
+          <h2><span class="project-title">Uh-sign-ment</span></h2>
+          <p>
+            Inspired by the want to be able to understand a recent deaf friend, I created uh-SIGN-ment. uh-SIGN-ment allows the user to learn the basics of American Sign Language! The user can log in and learn the ASL alphabet. Users are given feedback as they are learning using space repetiton.
+          </p>
+          <u>Front-End:</u>
+          <p>
+              React,
+              Redux,
+              Redux-Thunk,
+              React-Router,
+              HTML5,
+              CSS3,
+              Responsive Design,
+              CD (Netlify)
+          </p>
+          <u>Back-End:</u>
+          <p>
+              Node.js,
+              Express,
+              MongoDB,
+              Mongoose,
+              Bcrypt,
+              JSON Web Tokens,
+              Passport.js,
+              Mocha/Chai,
+              CI (Travis),
+              CD (Heroku)
+          </p>
+        </div>
+        <a href="https://sign-app-client.herokuapp.com/" target="_blank" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="https://github.com/thinkful-ei22/asl-client-richard-akim" target="_blank" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://itinerary-planner.netlify.com/" target="_blank">
+          <img src="img/projects/travelapp.png" alt="Project">
+        </a>
+        <div class="descript p3">
+          <h2><span class="project-title">Itinerary Planner</span></h2>
+          <p>Usually when I'm planning a trip, I used a word document to keep track of places I'm visiting and logistics stuff such as reservation ids. Itinerary planner is meant to assist the user in tracking their trips in a intuitive way. <br/> &nbsp; </p>
+          <u>Front-End:</u>
+          <p>
+            React,
+            Redux,
+            Redux-Thunk,
+            React-Router,
+            React-Forms
+            HTML5,
+            CSS3,
+            Responsive Design,
+            CD (Netlify)
+          </p>
+          <u>Back-End:</u>
+          <p>
+              Node.js,
+              Express,
+              MongoDB,
+              Mongoose,
+              Bcrypt,
+              JSON Web Tokens,
+              Mocha/Chai,
+              CI (Travis),
+              CD (Heroku)
+          </p>
+        </div>
+        <a href="https://itinerary-planner.netlify.com/" target="_blank" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="https://github.com/richart14/travel-app-client" target="_blank" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer id="main-footer">
     <span class="text-secondary">Email:</span>

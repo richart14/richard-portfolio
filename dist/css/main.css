@@ -124,20 +124,23 @@ header {
 .text-secondary {
   color: #eece1a; }
 
-main {
+main, section {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons {
+  min-height: 100vh; }
+  main .icons, section .icons {
     margin-top: 1rem; }
-    main .icons a {
+    main .icons a, section .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
+      main .icons a:hover, section .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
-  main#home {
+  main#home, section#home {
     overflow: hidden; }
-    main#home h1 {
+    main#home h1, section#home h1 {
       margin-top: 20vh; }
+
+#about, #work {
+  background: #444; }
 
 .about-info {
   display: grid;
@@ -227,10 +230,10 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
+  main, section {
     align-items: center;
     text-align: center; }
-    main .lg-heading {
+    main .lg-heading, section .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
   ul.menu-nav,
@@ -259,11 +262,11 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main {
-    padding: 2rem; }
-    main #home h1 {
+  main, section {
+    padding: 1rem; }
+    main #home h1, section #home h1 {
       margin-top: 10vh; }
-    main .lg-heading {
+    main .lg-heading, section .lg-heading {
       margin-top: 1rem;
       font-size: 4rem; }
   .projects {

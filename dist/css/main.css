@@ -191,7 +191,6 @@ main, section {
     background: #03a9f4; }
   .projects img {
     width: 100%;
-    height: 25rem;
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;

@@ -128,13 +128,15 @@ header {
 main, section {
   padding: 4rem;
   min-height: 100vh; }
-  main .icons, section .icons {
-    margin-top: 1rem; }
-    main .icons a, section .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover, section .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
+  main .icons a, section .icons a {
+    padding: 0.4rem; }
+    main .icons a:hover, section .icons a:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
+  main .right, section .right {
+    float: right; }
+  main .left, section .left {
+    float: left; }
   main#home, section#home {
     overflow: hidden; }
     main#home h1, section#home h1 {
@@ -175,10 +177,9 @@ main, section {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: 1fr; }
   .projects .descript {
     padding: 10px;
-    min-height: 550px;
     border: 4px solid #ffffff; }
     .projects .descript .project-title {
       text-decoration: underline;
@@ -191,6 +192,7 @@ main, section {
     background: #03a9f4; }
   .projects img {
     width: 100%;
+    min-height: 25em;
     border: 3px white solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -226,11 +228,11 @@ main, section {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
   main, section {
@@ -264,7 +266,7 @@ main, section {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main, section {
@@ -274,5 +276,9 @@ main, section {
     main .lg-heading, section .lg-heading {
       margin-top: 1rem;
       font-size: 4rem; }
+    main .icons, section .icons {
+      margin-top: 1rem; }
+    main .right, main .left, section .right, section .left {
+      float: none; }
   .projects {
     grid-template-columns: 1fr; } }

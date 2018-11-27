@@ -9,7 +9,7 @@ const work = document.querySelector('#work');
 const about = document.querySelector('#about');
 
 // Set Initial State of Menu
-let showMenu = false;
+let showMenu = true;
 
 menuBtn.addEventListener('click', toggleMenu);
 main.addEventListener('click', closeMenu);

@@ -12,22 +12,22 @@
 
 <body id="bg-img">
   <header>
-    <div class="menu-btn">
+    <div class="menu-btn close">
       <div class="btn-line"></div>
       <div class="btn-line"></div>
       <div class="btn-line"></div>
     </div>
 
-    <nav class="menu">
+    <nav class="menu show">
       <!-- <div class="menu-branding">
       </div> -->
-      <ul class="menu-nav">
-        <li class="nav-item">
+      <ul class="menu-nav show">
+        <li class="nav-item show">
           <a href="#about" class="nav-link">
             About me
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item show">
           <a href="#work" class="nav-link">
             My Projects
           </a>
@@ -43,7 +43,7 @@
     <h2 class="sm-heading">
       Full Stack Web Developer
     </h2>
-    <div class="icons left">
+    <div class="icons">
       <a href="https://www.facebook.com/richtomtomtom" target="_blank">
         <i class="fab fa-facebook fa-2x"></i>
       </a>
@@ -59,21 +59,6 @@
       <a href="./pdf/Richard's Tech Resume.pdf" target="_blank">
         <i class="far fa-address-card fa-2x"></i>
       </a>
-    </div>
-    <div class="icons right">
-      <a href="#work">My Projects</a>
-      <!-- <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank">
-        <i class="fas fa-user fa-2x">
-        </i>
-      </a>
-      <a href="https://sign-app-client.herokuapp.com/" target="_blank">
-        <i class="fas fa-american-sign-language-interpreting fa-2x">
-        </i>
-      </a>
-      <a href="https://itinerary-planner.netlify.com/" target="_blank">
-        <i class="fas fa-plane fa-2x">
-        </i>
-      </a> -->
     </div>
   </main>
 
@@ -123,7 +108,7 @@
     <div class="projects">
       <div class="item">
         <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank">
-          <img src="img/projects/shaving.png" alt="Project">
+          <img src="img/projects/shaving.png" class="project-img" alt="Project">
         </a>
         <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank" class="btn-light">
           <i class="fas fa-eye"></i> Project
@@ -146,7 +131,7 @@
       </div>
       <div class="item">
         <a href="https://sign-app-client.herokuapp.com/" target="_blank">
-          <img src="img/projects/asl-app.png" alt="Project">
+          <img src="img/projects/asl-app.png" class="project-img" alt="Project">
         </a>
         <a href="https://sign-app-client.herokuapp.com/" target="_blank" class="btn-light">
           <i class="fas fa-eye"></i> Project
@@ -187,7 +172,7 @@
       </div>
       <div class="item">
         <a href="https://itinerary-planner.netlify.com/" target="_blank">
-          <img src="img/projects/travelapp.png" alt="Project">
+          <img src="img/projects/travelapp.png" class="project-img" alt="Project">
         </a>
         <a href="https://itinerary-planner.netlify.com/" target="_blank" class="btn-light">
           <i class="fas fa-eye"></i> Project
@@ -227,10 +212,7 @@
     </div>
   </section>
 
-  <footer id="main-footer">
-    <span class="text-secondary">Email:</span>
-    tomrichard14@gmail.com
-  </footer>
+  
   <script src="js/main.js"></script>
 </body>
 

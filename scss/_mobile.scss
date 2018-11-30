@@ -1,14 +1,14 @@
 // Widescreens
 @include mediaXl {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
 // Desktops & Laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -68,7 +68,11 @@
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+
+    .project-img {
+      width: 100%;
+    }
   }
 }
 
@@ -84,9 +88,22 @@
       margin-top:1rem;
       font-size: 4rem;
     }
+
+    .icons {
+      margin-top: 1rem;
+    }
+    
+    .right, .left {
+      float: none;
+    }
   }
 
   .projects {
     grid-template-columns: 1fr;
+
+
+    .project-img {
+      width: 100%;
+    }
   }
 }

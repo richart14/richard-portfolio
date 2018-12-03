@@ -200,6 +200,14 @@ main, section {
   width: 100%;
   position: fixed;
   top: 0;
+
+  a {
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
 }
 
 @import 'mobile';
